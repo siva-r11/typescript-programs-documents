@@ -1,224 +1,219 @@
 # TypeScript Programs & Documents
 
-A beginner-friendly collection of **TypeScript programs, notes,
-examples, and reference documents** for learning TypeScript fundamentals
-through practical examples.
+A collection of **TypeScript programs, examples, notes, and learning documents** covering fundamental TypeScript concepts.
 
-## 📚 Repository Overview
+This repository is intended for beginners and developers who want to learn TypeScript concepts through simple explanations and practical examples.
 
-This repository contains simple TypeScript programs and Markdown
-documentation covering core TypeScript concepts.
+## 📚 Topics Covered
 
-The goal is to keep the examples easy to understand and useful for:
+### 1. Variables
 
--   Learning TypeScript fundamentals
--   Practicing TypeScript syntax
--   Understanding JavaScript-to-TypeScript concepts
--   Preparing for technical interviews
--   Quick revision and reference
+Learn the differences between `var`, `let`, and `const` in TypeScript.
 
-## 📂 Repository Contents
+- Scope
+- Reassignment
+- Redeclaration
+- Hoisting
+- Block scope
+- Function scope
 
-  -----------------------------------------------------------------------
-  File                                Description
-  ----------------------------------- -----------------------------------
-  `Datatype.ts`                       TypeScript examples demonstrating
-                                      data types
+📄 [Variables Comparison](variables-comparison.md)
 
-  `TypeScript_Data_Types.md`          Notes and examples for TypeScript
-                                      data types
+📄 [var, let & const](typescript_var_let_const.md)
 
-  `demo.ts`                           TypeScript demonstration/example
-                                      program
+💻 [Variable Examples](variable.ts)
 
-  `notes.md`                          General TypeScript learning notes
+---
 
-  `typescript_var_let_const.md`       Explanation and examples of `var`,
-                                      `let`, and `const`
+### 2. Data Types
 
-  `variable.ts`                       TypeScript variable examples
+Learn the commonly used TypeScript data types with examples.
 
-  `variables-comparison.md`           Comparison of `var`, `let`, and
-                                      `const`
-  -----------------------------------------------------------------------
+Topics include:
 
-## 🧩 Topics Covered
+- `number`
+- `string`
+- `boolean`
+- `any`
+- `unknown`
+- `void`
+- `null`
+- `undefined`
+- `object`
+- Arrays
+- Tuples
+- Enums
 
-### TypeScript Data Types
+📄 [TypeScript Data Types](TypeScript_Data_Types.md)
 
-Examples and notes covering commonly used TypeScript data types,
-including:
+💻 [Data Type Examples](Datatype.ts)
 
--   `string`
--   `number`
--   `boolean`
--   `any`
--   `unknown`
--   `null`
--   `undefined`
--   Arrays
--   Tuples
--   Objects
--   Enums
--   Other TypeScript type concepts as the repository evolves
+---
 
-### Variables
+### 3. Operators
 
-Examples explaining the differences between:
+Learn how operators are used to perform calculations, comparisons, logical operations, assignments, and other expressions in TypeScript.
 
--   `var`
--   `let`
--   `const`
+Topics include:
 
-The documentation covers important characteristics such as:
+- Arithmetic Operators
+- Assignment Operators
+- Comparison Operators
+- Logical Operators
+- Increment & Decrement Operators
+- Ternary Operator
+- Nullish Coalescing Operator
+- Optional Chaining Operator
+- Bitwise Operators
+- `typeof` Operator
+- `instanceof` Operator
 
-  -----------------------------------------------------------------------
-  Feature           `var`             `let`             `const`
-  ----------------- ----------------- ----------------- -----------------
-  Scope             Function          Block             Block
+📄 [TypeScript Operators](typescript_operators.md)
 
-  Reassignment      Allowed           Allowed           Not allowed
+---
 
-  Redeclaration in  Allowed           Not allowed       Not allowed
-  same scope                                            
+## 📂 Repository Structure
 
-  Hoisting          Hoisted and       Hoisted but in    Hoisted but in
-                    initialized as    Temporal Dead     Temporal Dead
-                    `undefined`       Zone              Zone
-  -----------------------------------------------------------------------
+```text
+typescript-programs-documents/
+│
+├── Datatype.ts
+├── TypeScript_Data_Types.md
+│
+├── variable.ts
+├── variables-comparison.md
+├── typescript_var_let_const.md
+│
+├── typescript_operators.md
+│
+├── demo.ts
+├── notes.md
+│
+└── README.md
+```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-Install **Node.js** and **TypeScript** on your system.
+Install Node.js on your system.
 
-Check Node.js:
+Verify the installation:
 
-``` bash
+```bash
 node --version
 ```
 
-Check npm:
+Install TypeScript globally:
 
-``` bash
-npm --version
-```
-
-Install TypeScript globally if required:
-
-``` bash
+```bash
 npm install -g typescript
 ```
 
-Verify the TypeScript compiler:
+Verify TypeScript:
 
-``` bash
+```bash
 tsc --version
 ```
 
-## ▶️ Running a TypeScript Program
+## ▶️ Running TypeScript Programs
 
 Compile a TypeScript file:
 
-``` bash
+```bash
+tsc filename.ts
+```
+
+For example:
+
+```bash
 tsc Datatype.ts
 ```
 
-This generates a JavaScript file that can be executed with Node.js:
+This generates a JavaScript file:
 
-``` bash
+```text
+Datatype.js
+```
+
+Run the generated JavaScript:
+
+```bash
 node Datatype.js
 ```
 
-You can follow the same approach for other `.ts` files:
+## 🧑‍💻 Learning Path
 
-``` bash
-tsc variable.ts
-node variable.js
+A recommended order for learning the concepts in this repository:
+
+```text
+1. Variables
+      ↓
+2. Data Types
+      ↓
+3. Operators
+      ↓
+4. Conditional Statements
+      ↓
+5. Loops
+      ↓
+6. Functions
+      ↓
+7. Arrays & Objects
+      ↓
+8. Classes & Interfaces
+      ↓
+9. Advanced TypeScript
 ```
 
-## 🛠️ Recommended Development Tools
+## 🎯 Purpose
 
-You can use any TypeScript-compatible editor or IDE. Recommended options
-include:
+The purpose of this repository is to maintain a structured collection of TypeScript learning materials with:
 
--   Visual Studio Code
--   IntelliJ IDEA
--   WebStorm
+- Simple explanations
+- Practical examples
+- `.ts` program files
+- Markdown documentation
+- Beginner-friendly concepts
+- Progressive learning topics
 
-For a better development experience, install the official **TypeScript**
-extension/support available for your editor.
+## 📖 Resources
 
-## 📝 Learning Approach
+- [TypeScript Official Documentation](https://www.typescriptlang.org/docs/)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 
-The repository follows a simple learning-by-doing approach:
+## 🔄 Repository Updates
 
-1.  Read the Markdown documentation.
-2.  Review the corresponding TypeScript example.
-3.  Compile the `.ts` file.
-4.  Run the generated JavaScript.
-5.  Modify the example and observe the output.
-6.  Add your own examples while learning new concepts.
+This repository will be continuously updated with new TypeScript concepts, programs, examples, and documentation.
 
-## 🔄 Future Topics
+### Current Topics
 
-This repository can be expanded with additional TypeScript concepts such
-as:
+| Topic | Documentation | Example |
+|---|---|---|
+| Variables | ✅ | ✅ |
+| Data Types | ✅ | ✅ |
+| Operators | ✅ | ✅ |
+| Conditional Statements | 🔄 | 🔄 |
+| Loops | 🔄 | 🔄 |
+| Functions | 🔄 | 🔄 |
+| Arrays | 🔄 | 🔄 |
+| Objects | 🔄 | 🔄 |
+| Classes | 🔄 | 🔄 |
+| Interfaces | 🔄 | 🔄 |
+| Generics | 🔄 | 🔄 |
 
--   Functions
--   Type aliases
--   Interfaces
--   Union and intersection types
--   Optional properties
--   Literal types
--   Enums
--   Classes
--   Access modifiers
--   Generics
--   Modules
--   Type assertions
--   Type guards
--   Utility types
--   Error handling
--   Async/Await
--   Promises
--   API examples
--   TypeScript with automation frameworks
+## ⭐ Contributing
 
-## 📖 Useful References
+Suggestions, improvements, and additional TypeScript examples are welcome.
 
--   [TypeScript Official
-    Documentation](https://www.typescriptlang.org/docs/)
--   [TypeScript
-    Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
--   [Node.js Documentation](https://nodejs.org/docs/latest/api/)
-
-## 🤝 Contributing
-
-This repository is primarily intended for learning and practice.
-
-If you want to improve it:
-
-1.  Fork the repository.
-2.  Create a new branch.
-3.  Add or improve examples/documentation.
-4.  Commit your changes.
-5.  Open a pull request.
-
-## 📌 Repository
-
-GitHub repository:
-
-**https://github.com/siva-r11/typescript-programs-documents**
+If you find an issue or have an idea for improving the examples, feel free to create an issue or submit a pull request.
 
 ## 👤 Author
 
 **Siva R**
 
-This repository is maintained as a personal TypeScript learning and
-reference collection.
+GitHub: [@siva-r11](https://github.com/siva-r11)
 
-------------------------------------------------------------------------
+---
 
-⭐ If you find the examples useful, consider starring the repository.
+⭐ If this repository helps you learn TypeScript, consider giving it a star.
